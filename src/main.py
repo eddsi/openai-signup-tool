@@ -12,7 +12,8 @@ def main():
     email_worker = threading.Thread(target=verify_email)
     email_worker.start()
 
-    max_threads = config['signupWorkerNum']
+    # max_threads = config['signupWorkerNum']
+    max_threads = 1
 
     pm = ThreadPoolManager(max_threads)
 

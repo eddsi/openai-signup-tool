@@ -164,8 +164,8 @@ def get_webdriver() -> WebDriver:
     if get_config_headless():
         if os.name == 'nt':
             windows_headless = True
-        else:
-            start_xvfb_display()
+        # else:
+        #     start_xvfb_display()
     # For normal headless mode:
     # options.add_argument('--headless')
 
